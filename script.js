@@ -18,3 +18,5 @@ Insert style in React
 v1. <h1 style={{color:"#ffff"}}>Hello World</h1>
 v2. const styles ={background:black}
 <h1 style={stlye}>Hello </h1>
+
+*/
