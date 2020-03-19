@@ -6,7 +6,7 @@ var gooseImg=<img src={goose} />
 ReactDOM.render(gooseImg,document.getElementById('app').)
 
 // If Else in JSX
-
+//Ex1
 if (user.age >= drinkingAge) {
   message = (
     <h1>
@@ -25,3 +25,16 @@ ReactDOM.render(
   message, 
   document.getElementById('app')
 );
+//Ex2
+
+let img;
+
+// if/else statement begins here:
+if (coinToss() === 'heads')
+{
+  img = <img src={pics.kitty} />
+}
+else{
+  img = <img src={pics.doggy} />
+}
+ReactDOM.render(img,document.getElementById('app'))
