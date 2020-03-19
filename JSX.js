@@ -73,4 +73,30 @@ class Random extends React.Component {
     return <h1>The number is {n}!</h1>;
   }
 }
+  // 'this' component 
+  class MyName extends React.Component {
+	// name property goes here:
+  get name(){
+    return 'cosmin'
+  }
+
+
+  render() {
+    return <h1>My name is {this.name}.</h1>;
+  }
+}
+
+ReactDOM.render(<MyName />, document.getElementById('app'));
+  
+  //Event listeners in components 
+  class Button extends React.Component {
+  scream() {
+    alert('AAAAAAAAHHH!!!!!');
+  }
+
+  render() {
+    return <button onClick={this.scream}>AAAAAH!</button>;
+  }
+}
+
   
