@@ -53,3 +53,22 @@ const h1 = React.createElement(
   "Hello, world"
 );
   
+  /*A component class is like a factory that creates components. If you have a component class, then you can use that class to produce as many components as you want.
+
+To make a component class, you use a base class from the React library: React.Component.
+
+What is React.Component, and how do you use it to make a component class?
+
+React.Component is a JavaScript class. To create your own component class, you must subclass React.Component. 
+You can do this by using the syntax class YourComponentNameGoesHere extends React.Component {}.*/
+  
+  ///syntax
+class Owl extends React.Component {
+  render() {
+    return( <div>
+        <h1>{owl.title}</h1>
+        <img src ={owl.src} alt={owl.title} />
+      </div>)
+  }}
+ReactDOM.render(<Owl/>, document.getElementById('app'))
+  
