@@ -63,12 +63,14 @@ React.Component is a JavaScript class. To create your own component class, you m
 You can do this by using the syntax class YourComponentNameGoesHere extends React.Component {}.*/
   
   ///syntax
-class Owl extends React.Component {
+class Random extends React.Component {
   render() {
-    return( <div>
-        <h1>{owl.title}</h1>
-        <img src ={owl.src} alt={owl.title} />
-      </div>)
-  }}
-ReactDOM.render(<Owl/>, document.getElementById('app'))
+    // First, some logic that must happen
+    // before rendering:
+    const n = Math.floor(Math.random() * 10 + 1);
+    // Next, a return statement
+    // using that logic:
+    return <h1>The number is {n}!</h1>;
+  }
+}
   
