@@ -98,5 +98,15 @@ ReactDOM.render(<MyName />, document.getElementById('app'));
     return <button onClick={this.scream}>AAAAAH!</button>;
   }
 }
+// Render props 
+	class Greeting extends React.Component {
+  render() {
+    return <h1>Hi there, {this.props.firstName}!</h1>;
+  }
+}
 
+ReactDOM.render(
+  <Greeting firstName='Groberta' />, 
+  document.getElementById('app')
+);
   
