@@ -109,4 +109,35 @@ ReactDOM.render(
   <Greeting firstName='Groberta' />, 
   document.getElementById('app')
 );
+	
+// Pass functions from a component to another 
+	
+	// first componet 
+	class Talker extends React.Component {
+  talk() {
+    let speech = '';
+    for (let i = 0; i < 10000; i++) {
+      speech += 'blah ';
+    }
+    alert(speech);
+  }
   
+  render() {
+    return <Button talk={this.talk} />;// here is exported 
+  }
+}
+
+ReactDOM.render(
+  <Talker />,
+  document.getElementById('app')
+);
+  // Second component 
+	export class Button extends React.Component {
+  render() {
+    return (
+      <button onClick={this.props.talk }>
+        Click me!
+      </button>
+    );
+  }
+}
