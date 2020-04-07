@@ -44,3 +44,6 @@ v2. const styles ={background:black}
  // useState() -- most important react hook -- 
   // use state has always two elements, first element is the current state, second element is the function that changes the state 
 useState({...})
+   //THIS AND BID       
+ // A class method typically needs to use the this keyword so it can access properties on the class (such as state and props) 
+          //inside the scope of the method. There are a few ways to allow your class methods to access this.
